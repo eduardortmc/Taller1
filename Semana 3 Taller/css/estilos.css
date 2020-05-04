@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2e0e0;
+}
+header.cabeceraPrincipal, nav.menuPrincipal, section.galeriaPrinicpal,aside.sponsor,main,footer.piePagina{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    width: 90%;
+    margin: 0 auto;
+}
+header.cabeceraPrincipal{
+    background-color: #ffffff;
+}
+header.cabeceraPrincipal h1{
+    font-size: 25px;
+    color: #000;
+}
+.cabeceraPrincipal .logo{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 20%;
+    display: inline-block;
+    padding: 1em 1em;
+    text-align: center;
+}
+.logo .iniciales-logo{
+    padding: 5px;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+section.seccionCabecera{
+    width: 70%;
+    display: inline-block;
+    text-align: right;
+}
+/*  -------------- Barra de busqueda  ------------------*/
+.seccionCabecera .barra-busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.seccionCabecera .barra-busqueda input{
+    min-width: 30%;
+    padding:  0 14px;
+    height: 33px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.seccionCabecera .barra-busqueda button{
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: #545454;
+    background-color: #f8f8f8;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.seccionCabecera .barra-busqueda button:hover{
+    background-color: #f1f1f1;
+}
+/*  -------------- FIN Barra de busqueda  ------------------*/
+
+
+nav.menuPrincipal, main,aside.sponsor,footer.piePagina{
+    margin-top: 2px;
+}
+nav.menuPrincipal{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+nav.menuPrincipal a{
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    transition:  0.2s ease all;
+}
+nav.menuPrincipal a:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+section.galeriaPrinicpal{
+    margin-top: 2px;
+}
+section.galeriaPrinicpal img{
+    width: 100%;
+}
+
+
+main{
+    text-align: center;
+    background-color: #ffffff;
+}
+section.articulo{
+    width: 48%;
+    display: inline-block;
+}
+section.noticias{
+    display: flex;
+    background: #ffffff;
+    text-align: justify;
+}
+.noticias img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.noticias .contenedor-texto{
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.noticias .contenedor1{
+    width: 95%;
+}
+
+.noticias .titulo{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.noticias .fecha{
+    font-size: 15px;
+    color: #868686;
+    margin-bottom: 10px;
+}
+.noticias .extracto{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #868686;
+}
+.btn-link{
+    background: #2a2929;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.btn-link:hover{
+    background-color: #000;
+}
+
+
+/*  -------------- SPONSORS ------------------*/
+
+aside.sponsor{
+    text-align: center;
+}
+section.sponsorItem{
+    padding: 2em 1em;
+    width: 20%;
+    display: inline-block;
+    background-color: #ffffff;
+
+}
+section.sponsorItem img{
+    width: 60%;
+}    
+
+.sponsorItem:hover{
+ background-color: #000;
+}
+
+.zoom:hover{
+    transform: scale(1.4);
+
+}
+
+
+/*  -------------- FOOTER ------------------*/
+footer.piePagina{
+    text-align: right;
+    background-color: #000;
+    color: #ffffff;
+}
+footer.piePagina h5{
+    padding: 1em 2em;
+}
+
+
+
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:40px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+
+/*  -------------- Media Queries  ------------------*/
+
+/*  -------------- Media Querie IPHONE X  ------------------*/
+@media only screen and (max-width: 375px) {
+
+footer.piePagina{
+    text-align: center;
+}
+section.sponsorItem{
+    border: 1px solid #000;
+}
+nav.menuPrincipal a{
+   font-size: 12px;
+}
+
+.noticias .extracto{
+    font-size: 5px;
+}
+.noticias .fecha{
+    font-size: 5px;
+}
+}
+
+
+/*  -------------- Media Querie IPAD PRO  ------------------*/
+@media only screen and (max-width: 1024px) {
+
+footer.piePagina{
+    text-align: center;
+}
+section.sponsorItem{
+    border: 1px solid #000;
+}
+nav.menuPrincipal a{
+   font-size: 20px;
+}
+
+.social_footer_ul li i {  width:30px; height:30px; text-align:center;}
+
+aside.sponsor h3{
+   font-size: 40px;
+}
+.noticias .extracto{
+    font-size: 24px;
+}
+.noticias .fecha{
+    font-size: 24px;
+}
+}
